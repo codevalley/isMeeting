@@ -4,10 +4,7 @@ chrome.webRequest.onBeforeRequest.addListener(
     return {cancel: true}; 
   },
   {urls: 
-    ["*://*.doubleclick.net/*",
-    "*://*.googleadservices.com/*",
-    "*://*.googlesyndication.com/*",
-    "*://*.moat.com/*"]
+    ["*://https://meet.google.com/???-???-???"]
   },
-  ["blocking"]
+  ["You're blocked from meeting!"]
 );
